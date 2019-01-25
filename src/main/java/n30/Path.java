@@ -59,26 +59,17 @@ public class Path {
       Vector2 point = cubicBezier(i);
       Vector2 d = deriv(i, 0.001);
       System.out.println(d.getMag());
-      //System.out.println(d.x + " " + d.y);
-      //System.out.println(Math.toDegrees(Math.atan2(d.y, d.x)));
       Vector2 perp = new Vector2(d.y, -d.x);
-      System.out.println(perp.getMag());
 
-      Vector2 leftOffset = perp.clone().setMagnitude(perp.getMag(), offset);
-      //System.out.println(leftOffset.x + " " + leftOffset.y);
-      Vector2 rightOffset = perp.clone().multiply(-1).setMagnitude(perp.getMag(), offset);
-      //System.out.println(rightOffset.x + " " + rightOffset.y);
-      //System.out.println(leftOffset.dist(rightOffset));
-      //System.out.println(Math.toDegrees(Math.atan2(perp.y, perp.x)));
-      //System.out.println(offsetVector.x + " " + offsetVector.y);
-      //Vector2 left = point.clone().add(perp.clone().multiply(offset));
-      //Vector2 right = point.clone().add(perp.clone().multiply(-offset));
+      //Vector2 leftOffset = perp.clone().setMagnitude(perp.getMag(), offset);
+      //Vector2 rightOffset = perp.clone().multiply(-1).setMagnitude(perp.getMag(), offset);
+
       Vector2 left = point.clone().add(perp.clone().setMagnitude(1, offset));
       Vector2 right = point.clone().add(perp.clone().multiply(-1).setMagnitude(1, offset));
 
       //System.out.println(left.x + " " + left.y);
       //System.out.println(right.x + " " + right.y);
-      //System.out.println(left.dist(right));
+      System.out.println(left.dist(right));
 
       leftSet.add(left);
       rightSet.add(right);

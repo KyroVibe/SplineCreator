@@ -24,9 +24,9 @@ public class Main {
     inst = this;
 
     Vector2 p0 = new Vector2(0, 0);
-    Vector2 p1 = new Vector2(6, 10);
-    Vector2 p2 = new Vector2(12, 0);
-    Vector2 p3 = new Vector2(0, 4);
+    Vector2 p1 = new Vector2(7.5, 0);
+    Vector2 p2 = new Vector2(2.5, 10);
+    Vector2 p3 = new Vector2(10, 10);
     System.out.println("Creating Path...");
     Path path = new Path(p0, p1, p2, p3);
     System.out.println("Created Path.");
