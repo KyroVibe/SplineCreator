@@ -3,7 +3,9 @@ package n30;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
+import java.util.ArrayList;
 
+import n30.misc.Vector2;
 import n30.visual.Window;
 
 public class Main {
@@ -20,6 +22,20 @@ public class Main {
 
   public Main() {
     inst = this;
+
+    Vector2 p0 = new Vector2(0, 0);
+    Vector2 p1 = new Vector2(7.5, 0);
+    Vector2 p2 = new Vector2(2.5, 10);
+    Vector2 p3 = new Vector2(10, 10);
+    System.out.println("Creating Path...");
+    Path path = new Path(p0, p1, p2, p3);
+    System.out.println("Created Path.");
+    System.out.println("Splitting Path...");
+    ArrayList<ArrayList<Vector2>> a = path.getSplitPath(0.5);
+    System.out.println("Path Split.");
+    System.out.println("Printing Cordinates...");
+    path.printCords(a);
+    System.out.println("Done");
   }
 
   public void Init() {

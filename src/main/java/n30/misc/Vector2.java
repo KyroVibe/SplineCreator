@@ -21,4 +21,22 @@ public class Vector2 {
     return this;
   }
 
+  public Vector2 multiply(double a) {
+    x *= a;
+    y *= a;
+    return this;
+  }
+
+  public Vector2 add(Vector2 a) {
+    x += a.x;
+    y += a.y;
+    return this;
+  }
+
+  public Vector2 add(double a) {
+    x += a;
+    y += a;
+    return this;
+  }
+
 }

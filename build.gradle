@@ -15,7 +15,7 @@ plugins {
 }
 
 // Define the main class for the application
-mainClassName = 'App'
+mainClassName = 'n30.Main'
 
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
@@ -23,6 +23,12 @@ dependencies {
 
     // Use JUnit test framework
     testCompile 'junit:junit:4.12'
+}
+
+jar {
+    manifest {
+        attributes('Main-Class' : mainClassName)
+    }
 }
 
 // In this section you declare where to find the dependencies of your project

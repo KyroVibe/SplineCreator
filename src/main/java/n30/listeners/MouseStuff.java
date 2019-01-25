@@ -4,11 +4,11 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.ArrayList;
 
-import n30.misc.Point;
+import n30.misc.Vector2;
 
 public class MouseStuff implements MouseListener {
 
-  public static ArrayList<Point> points = new ArrayList<Point>();
+  public static ArrayList<Vector2> points = new ArrayList<Vector2>();
 
   public MouseStuff() {
 
