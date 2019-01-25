@@ -24,14 +24,19 @@ public class Main {
     inst = this;
 
     Vector2 p0 = new Vector2(0, 0);
-    Vector2 p1 = new Vector2(7.5, 0);
-    Vector2 p2 = new Vector2(2.5, 10);
-    Vector2 p3 = new Vector2(10, 10);
+    Vector2 p1 = new Vector2(6, 10);
+    Vector2 p2 = new Vector2(12, 0);
+    Vector2 p3 = new Vector2(0, 4);
     System.out.println("Creating Path...");
     Path path = new Path(p0, p1, p2, p3);
     System.out.println("Created Path.");
     System.out.println("Splitting Path...");
-    ArrayList<ArrayList<Vector2>> a = path.getSplitPath(0.5);
+    ArrayList<ArrayList<Vector2>> a = path.getSplitPath(1);
+
+    for (int i = 0; i < a.get(0).size(); i++) {
+      //System.out.println(a.get(0).get(i).dist(a.get(1).get(i)));
+    }
+
     System.out.println("Path Split.");
     System.out.println("Printing Cordinates...");
     path.printCords(a);
