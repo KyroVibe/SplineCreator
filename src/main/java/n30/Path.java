@@ -26,4 +26,8 @@ public class Path {
     return finalPoint;
   }
 
+  public Path[] splitTrack(double width) {
+    tracks = new Path[];
+  }
+
 }
