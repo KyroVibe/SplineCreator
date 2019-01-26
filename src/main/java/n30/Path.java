@@ -58,7 +58,7 @@ public class Path {
       System.out.println("Calculating: " + i);
       Vector2 point = cubicBezier(i);
       Vector2 d = deriv(i, 0.001);
-      System.out.println(d.getMag());
+      //System.out.println(d.getMag());
       Vector2 perp = new Vector2(d.y, -d.x);
 
       //Vector2 leftOffset = perp.clone().setMagnitude(perp.getMag(), offset);
