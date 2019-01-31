@@ -6,6 +6,7 @@ import java.awt.image.BufferStrategy;
 import java.util.ArrayList;
 
 import n30.misc.Vector2;
+import n30.motion.AccelGraph;
 import n30.visual.Window;
 
 public class Main {
@@ -23,7 +24,7 @@ public class Main {
   public Main() {
     inst = this;
 
-    Vector2 p0 = new Vector2(0, 0);
+    /*Vector2 p0 = new Vector2(0, 0);
     Vector2 p1 = new Vector2((3 / 4) * 5, 0);
     Vector2 p2 = new Vector2(5, (1 / 4) * 5);
     Vector2 p3 = new Vector2(5, 5);
@@ -40,7 +41,13 @@ public class Main {
     System.out.println("Path Split.");
     System.out.println("Printing Cordinates...");
     path.printCords(a);
-    System.out.println("Done");
+    System.out.println("Done");*/
+
+    System.out.println("Starting...");
+    AccelGraph ac = new AccelGraph(80, 4, 300);
+    ac.calcPoints();
+    System.out.println("WHAT THE FUCK IS THIS VALUE???: " + ac.accelPeriod + "\nNow what is this?: " + ac.accelDist);
+    System.out.println("Done.");
   }
 
   public void Init() {
