@@ -7,7 +7,7 @@ lefty = []
 rightx = []
 righty = []
 
-file = open("/home/n30b4rt/Desktop/AccelCords.spart", "r")
+file = open("/home/n30b4rt/Desktop/PathData.spart", "r")
 data = file.read()
 
 twocords = data.split('\n')

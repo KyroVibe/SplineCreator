@@ -24,30 +24,30 @@ public class Main {
   public Main() {
     inst = this;
 
-    /*Vector2 p0 = new Vector2(0, 0);
-    Vector2 p1 = new Vector2((3 / 4) * 5, 0);
-    Vector2 p2 = new Vector2(5, (1 / 4) * 5);
-    Vector2 p3 = new Vector2(5, 5);
+    Vector2 p0 = new Vector2(0, 0);
+    Vector2 p1 = new Vector2(4, 0);
+    Vector2 p2 = new Vector2(2, 4);
+    Vector2 p3 = new Vector2(6, 4);
     System.out.println("Creating Path...");
     Path path = new Path(p0, p1, p2, p3);
     System.out.println("Created Path.");
     System.out.println("Splitting Path...");
-    ArrayList<ArrayList<Vector2>> a = path.getSplitPath(1.25);
+    ArrayList<ArrayList<Vector2>> a = path.getSplitPath(1.0833);
 
     for (int i = 0; i < a.get(0).size(); i++) {
-      //System.out.println(a.get(0).get(i).dist(a.get(1).get(i)));
+      System.out.println(a.get(0).get(i).dist(a.get(1).get(i)));
     }
 
     System.out.println("Path Split.");
     System.out.println("Printing Cordinates...");
     path.printCords(a);
-    System.out.println("Done");*/
+    System.out.println("Done");
 
-    System.out.println("Starting...");
+    /*System.out.println("Starting...");
     AccelGraph ac = new AccelGraph(80, 4, 300);
     ac.calcPoints();
     System.out.println("WHAT THE FUCK IS THIS VALUE???: " + ac.accelPeriod + "\nNow what is this?: " + ac.accelDist);
-    System.out.println("Done.");
+    System.out.println("Done.");*/
   }
 
   public void Init() {

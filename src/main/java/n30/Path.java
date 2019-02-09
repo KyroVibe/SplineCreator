@@ -83,7 +83,7 @@ public class Path {
   }
 
   public void printCords(ArrayList<ArrayList<Vector2>> paths) {
-    File a = new File("/home/n30b4rt/Desktop/PathData.spart");
+    File a = new File("paths/PathData.spart");
     try {
       a.createNewFile();
       FileWriter writer = new FileWriter(a);
